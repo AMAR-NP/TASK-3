@@ -1,0 +1,39 @@
+Functional Requirements
+
+User Input
+1. **Artist Name Input:**
+   - The user must provide the artist's name.
+   - The input should be a string.
+
+2. **Song Title Input:**
+   - The user must provide the song title.
+   - The input should be a string.
+
+### Processing
+3. **Search for Song:**
+   - The application should use the provided artist's name and song title to search for the song on a lyrics website.
+
+4. **Fetch Lyrics:**
+   - Once the song is found, the application should fetch the song lyrics by scraping the lyrics website.
+   - If the song is not found, the application should inform the user.
+
+### Output
+5. **Display Lyrics:**
+   - The application should display the lyrics of the song to the user.
+   - If lyrics are not found, display an appropriate message.
+
+## Technical Requirements
+
+### Libraries and Dependencies
+1. **Python 3.x**
+2. **Requests Library:**
+   - Used for making HTTP requests to the lyrics website.
+   - Install using: `pip install requests`
+   
+3. **BeautifulSoup Library:**
+   - Used for parsing HTML and extracting lyrics.
+   - Install using: `pip install beautifulsoup4`
+   
+4. **LXML Library:**
+   - Used by BeautifulSoup for parsing HTML.
+   - Install using: `pip install lxml`
